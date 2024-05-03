@@ -5,4 +5,149 @@
   box-sizing: content-box;
 }
 
+body {
+  background-color: #e1ffe1;
+  font-family: "Open Sans";
+}
+
+.card {
+  background-color: rgb(254, 255, 244);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 500px;
+  padding: 40px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #879c87;
+}
+
+@media (max-width: 580px) {
+  .card {
+    margin: 0 0 20px 0;
+    border-radius: 0px;
+  }
+}
+.card__image .card__image__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card__information {
+  background-color: hsla(50, 100%, 79%, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.card__information .card__information__cap .card__information__cap__subtitle {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #e1be11;
+}
+.card__information .card__information__cap .card__information__cap_list {
+  list-style-position: inside;
+  font-size: 12px;
+}
+.card__information .card__information__cap .card__information__cap_list li::marker {
+  color: #e1be11;
+}
+.card__information .card__information__cap .card__information__cap_list span {
+  padding-left: 20px;
+}
+.card__information .card__information__overview {
+  margin-top: 5px;
+  font-size: 12px;
+}
+.card__information .card__information__overview .card__information__overview_text {
+  text-align: justify;
+}
+
+.card__ingredients {
+  margin-bottom: 15px;
+}
+.card__ingredients .card__ingredients__subtitle {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #397d39;
+}
+.card__ingredients .card__ingredients_list {
+  font-size: 16px;
+  list-style-position: inside;
+}
+.card__ingredients .card__ingredients_list li::marker {
+  color: #397d39;
+}
+.card__ingredients .card__ingredients_list span {
+  padding-left: 20px;
+}
+
+.card__nutrition .card__nutrition__subtitle {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #397d39;
+}
+.card__nutrition .card__nutrition__text {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.card__nutrition .card__nutrition__table {
+  font-size: 16px;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+.card__nutrition .card__nutrition__table tr {
+  border-bottom: 1px solid hsla(128, 33%, 35%, 0.3);
+}
+.card__nutrition .card__nutrition__table tr td {
+  padding-bottom: 5px;
+}
+.card__nutrition .card__nutrition__table tr td:nth-child(2) {
+  color: #397d39;
+  font-weight: bold;
+}
+
+.card__instructions {
+  margin-bottom: 15px;
+}
+.card__instructions .card__instructions__subtitle {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #397d39;
+}
+.card__instructions .card__instructions__list {
+  list-style: none;
+  font-size: 16px;
+}
+.card__instructions .card__instructions__list li:not(:last-child) {
+  border-bottom: 1px solid hsla(128, 33%, 35%, 0.3);
+  padding-bottom: 20px;
+}
+.card__instructions .card__instructions__list li {
+  margin-bottom: 5px;
+  padding-top: 20px;
+}
+.card__instructions .card__instructions__list li .card__instructions__list__counter {
+  float: left;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #397d39;
+}
+
+.card__name {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.card__name .card__name__title {
+  font-size: 22px;
+}
+
+.footer__information .footer__information__content {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */

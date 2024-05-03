@@ -1,0 +1,31 @@
+.card__information{
+    background-color: $card-info-yellow-background;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 300;
+    .card__information__cap{
+        .card__information__cap__subtitle{
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: $card-info-yellow-title;
+        }
+        .card__information__cap_list{
+            list-style-position: inside;
+            font-size: 12px;
+            li::marker{
+                color: $card-info-yellow-title;
+            }
+            span{
+                padding-left: 20px;
+            }
+        }
+    }
+    .card__information__overview{
+        margin-top: 5px;
+        font-size: 12px;
+        .card__information__overview_text{
+            text-align: justify;
+        }
+    }
+    margin-bottom: 15px;
+}
